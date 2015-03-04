@@ -1,23 +1,20 @@
-Package: template
-Title: Generic template for research projects structured as R packages.
-Version: 0.2-3
+Package: CVtools
+Title: Tools related to preparation and analysis of academic CVs.
+Version: 0.1
 Authors@R: "Francisco Rodriguez-Sanchez <f.rodriguez.sanc@gmail.com> [aut, cre]"
-Description: This package works as a template for new research
-    projects, under the idea of having everything (data, R scripts, functions
-    and manuscripts) contained in the same package to facilitate collaboration
-    and promote reproducibility.
+Description: This package contains tools and functions to help prepare a modern, dynamic academic CV
+    (with citations, altmetrics, etc), plus CV analysis tools (e.g. citation or coauthorship networks).
+    It is particularly aimed for CVs maintained in Rmarkdown format.
 Depends:
     R (>= 3.1.1)
-License: CC0
+License: CC-BY-NC-SA
 LazyData: true
-URL: https://github.com/Pakillo/template
-BugReports: https://github.com/Pakillo/template/issues
+URL: https://github.com/Pakillo/CVtools
+BugReports: https://github.com/Pakillo/CVtools/issues
 VignetteBuilder: knitr
 Imports:
     knitr (>= 1.5),
-    rmarkdown,
-    devtools
+    rmarkdown
 Suggests:
     knitcitations (>= 0.6),
-    testthat,
-    rmdTemplates
+    testthat
