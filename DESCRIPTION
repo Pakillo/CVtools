@@ -13,8 +13,11 @@ URL: https://github.com/Pakillo/CVtools
 BugReports: https://github.com/Pakillo/CVtools/issues
 VignetteBuilder: knitr
 Imports:
+    ggplot2,
     knitr (>= 1.5),
-    rmarkdown
+    rmarkdown,
+    scholar,
+    XML
 Suggests:
     knitcitations (>= 0.6),
     testthat

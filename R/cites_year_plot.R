@@ -11,7 +11,7 @@
 #' @examples \dontrun{
 #' cites_year_plot(user="B7vSqZsAAAAJ")
 #'}
-cites_year_plot <- function(user, fsize=18){
+cites_year_plot <- function(user, fontsize=18){
   citdf <- get_citation_history(user)
   require(ggplot2)
   citesplot <- ggplot(data=citdf, aes(x=year, y=cites)) + geom_bar(stat="identity") +

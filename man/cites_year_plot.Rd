@@ -4,7 +4,7 @@
 \alias{cites_year_plot}
 \title{Plot number of citations per year (in Google Scholar).}
 \usage{
-cites_year_plot(user, fsize = 18)
+cites_year_plot(user, fontsize = 18)
 }
 \arguments{
 \item{user}{Google Scholar user ID.}
