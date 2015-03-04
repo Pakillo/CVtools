@@ -2,6 +2,9 @@
 #'
 #' This function retrieves the number of citations of a given paper in Google Scholar.
 #'
+#' @export
+#' @importFrom stringr str_extract str_extract_all
+#' @import XML
 #' @param user character vector. The user ID in Google Scholar Citations. Obtain from author's profile in google scholar website.
 #' @param paper character vector. The paper ID in Google Scholar Citations. Copy from publication list in author's profile website.
 #' @author F. Rodriguez-Sanchez
@@ -9,9 +12,6 @@
 #' ncites_scholar(user="B7vSqZsAAAAJ", paper="d1gkVwhDpl0C")
 #'
 ncites_scholar <- function(user, paper){
-
-  require(XML)
-  require(stringr)
 
   URL <- paste0("http://scholar.google.com/citations?user=", user,
                 "&view_op=view_citation&hl=en&citation_for_view=", user, ":", paper)
