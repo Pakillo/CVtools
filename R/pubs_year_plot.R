@@ -18,7 +18,7 @@ pubs_year_plot <- function(user, fontsize=18){
   pubsplot <- ggplot(data=pubsdf, aes(x=year)) + geom_bar(binwidth=0.8) +
     labs(x="Year", y="Number of publications") +
     ggtitle("Publications per year") +
-    theme_bw(base_size = fsize)
+    theme_bw(base_size = fontsize)
     #theme_classic(base_size = 18, base_family = "Helvetica")
   pubsplot
 }

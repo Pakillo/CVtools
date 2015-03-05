@@ -17,7 +17,7 @@ cites_year_plot <- function(user, fontsize=18){
   citesplot <- ggplot(data=citdf, aes(x=year, y=cites)) + geom_bar(stat="identity") +
     labs(x="Year", y="Number of cites") +
     ggtitle("Citations per year") +
-    theme_bw(base_size = fsize)
+    theme_bw(base_size = fontsize)
     #theme_classic(base_size = 18, base_family = "Helvetica")
   citesplot
 }
