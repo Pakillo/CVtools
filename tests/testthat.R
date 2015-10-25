@@ -1,4 +1,4 @@
 library(testthat)
-library(template)
+library(CVtools)
 
-test_check("template")
+test_check("CVtools")

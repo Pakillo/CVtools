@@ -1,13 +1,13 @@
 Package: CVtools
-Title: Tools related to preparation and analysis of academic CVs.
-Version: 0.1
+Title: Tools for preparation and analysis of academic CVs.
+Version: 0.3.1
 Authors@R: "Francisco Rodriguez-Sanchez <f.rodriguez.sanc@gmail.com> [aut, cre]"
-Description: This package contains tools and functions to help prepare a modern, dynamic academic CV
+Description: Tools and functions to help prepare a modern, dynamic, academic CV
     (with citations, altmetrics, etc), plus CV analysis tools (e.g. citation or coauthorship networks).
     It is particularly aimed for CVs maintained in Rmarkdown format.
 Depends:
     R (>= 3.1.1)
-License: CC-BY-NC-SA
+License: CC-BY-NC-SA 4.0
 LazyData: true
 URL: https://github.com/Pakillo/CVtools
 BugReports: https://github.com/Pakillo/CVtools/issues
@@ -15,6 +15,7 @@ VignetteBuilder: knitr
 Imports:
     ggplot2,
     knitr (>= 1.5),
+    RefManageR,
     rmarkdown,
     scholar,
     XML
